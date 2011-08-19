@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>perlpaste</title>
+  <style>
+  body {
+  font-family:sans-serif; }
+  pre {
+  width:80em; }
+  #header {
+  width:100%;
+  background-color:#000;
+  color:#fff; }
+  #box {
+  border:1px solid black;
+  width:80em;
+  padding:5px;
+  background-color:#eee; }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1>perlpaste - a pastebin in perl</h1>
+   </div>
+  <h1><% title %></h1>
+  <h3>paste id: #<% key %></h3>
+  <h3><a href="<% link %>"><% link %></a></h3>
+  <div id="box"><pre><% paste %></pre></div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>perlpaste</title>
+  <style>
+    body {
+    font-family:sans-serif; }
+    p {
+    padding:10px; }
+    #header {
+    width:100%;
+    background-color:#000;
+    color:#fff; }
+    #wrapper {
+    width:100%; }
+    #input {
+    float:right;
+    width:80%; }
+    #sidebar {
+    float:left;
+    width:20%; }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1>perlpaste - a pastebin in perl</h1>
+  </div>
+  <div id="wrapper">
+    <div id="input">
+      <form action="paste" method="post">
+	<table cellpadding=5>
+	  <tr>
+	    <td>title</td>
+	    <td><input type="text" name="title" />&nbsp;<input type="submit" value="paste" /></td>
+	  </tr>
+	  <tr>
+	    <td>text</td>
+	    <td><textarea name="paste" cols="80" rows="24"></textarea></td>
+	  </tr>
+	</table>
+    </div>
+    <div id="sidebar">
+      <p><b>perlpaste</b> is a no-nonsense pastebin, devoid of many features that you might expect to find in other pastebins. you might call this site lazy, but the author prefers the term "minimalistic".</p>
+      <p>you can paste things into the textbox, and you will be provided a link that you can distribute freely.</p>
+    </div>
+  </div>
+</body>
+</html>

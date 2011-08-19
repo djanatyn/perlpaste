@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>Hello world!</title>
+</head>
+<body>
+  <h1>[% header %]</h1>
+  <hr />
+  <p>[% text %]</p>
+  <br />
+  <form action="tellya" method="post">
+    <input type="textbox" name="heyo" />
+    <input type="submit" name="submit" />
+  </form>
+</body>
+</html>
